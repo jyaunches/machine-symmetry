@@ -1,0 +1,9 @@
+{
+  "title": "Broccoli Conversion (supporting carrot)",
+  "cells": [
+    {
+      "type": "text",
+      "data": "- implementing carrot in terms of cilantro (95% not throw-away)<div><br></div><div>Firmware</div><div>-&nbsp;</div><div><br><div>Non-firmware</div><div>- manually soldier wires</div></div><div><br></div><div>Avery issues</div><div>- voltage (carrot is supposed to run at 5V)</div><div>- level shifter for i2c? (in conjunction with soldiered on capacitors) (multiple carrots on one side.. 1 broccoli on the other)</div><div><br></div><div>New work</div><div>- firmware to support multiple sensors</div><div><br></div><div><br></div><div>——————</div><div><br></div><div>Jim</div><div>- to figure out level converter &amp; voltage</div><div>- let Terg know</div><div><br></div><div>Terg</div><div>- firmware change post</div>"
+    }
+  ]
+}

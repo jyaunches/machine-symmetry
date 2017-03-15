@@ -1,0 +1,25 @@
+[user]
+	name = jyaunches
+	email = jmyaunch@gmail.com
+
+[alias]
+ci = commit
+st = status
+co = checkout
+sp = diff-tree --no-commit-id --name-only -r
+lc = log ORIG_HEAD.. --stat --no-merges
+cp = cherry-pick
+cpt = cherry-pick --strategy=recursive -X theirs
+rp = remote update origin --prune
+
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/juliettayaunches/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

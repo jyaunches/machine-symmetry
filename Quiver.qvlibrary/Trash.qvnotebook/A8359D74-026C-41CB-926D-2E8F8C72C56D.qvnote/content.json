@@ -1,0 +1,9 @@
+{
+  "title": "Todo:",
+  "cells": [
+    {
+      "type": "text",
+      "data": "Way of updating single properties and saving context… (See Sync.swift)<div>- On and off main thread</div>"
+    }
+  ]
+}
