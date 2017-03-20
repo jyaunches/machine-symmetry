@@ -243,55 +243,71 @@ moveToMacScreen = function(win)
 end
 
 -- Apps
-launchCgm = function()
-  launchThenDo("Safari", function(win)
-    fullscreenOnMac(win)
+launchAppCode = function()
+  launchThenDo("AppCode", function(win)
+    twoThirdsRight(win)
+  end)
+end
+
+launchXcode = function()
+  launchThenDo("Xcode", function(win)
+    twoThirdsLeft(win)
   end)
 end
 
 launchSpotify = function()
   launchThenDo("Spotify", function(win)
-    fullscreenOnMac(win)
+    twoThirdsRight(win)
   end)
 end
 
 launchSublime = function()
   launchThenDo("Sublime Text", function(win)
-    twoThirdsRightOnDell(win)
+    twoThirdsLeft(win)
   end)
 end
 
 launchChrome = function()
   launchThenDo("Google Chrome", function(win)
-    twoThirdsRightOnDell(win)
+    twoThirdsRight(win)
   end)
 end
 
 launchITerm = function()
   launchThenDo("iTerm", function(win)
-    thirdLeftOnDell(win)
+    twoThirdsLeft(win)
+  end)
+end
+
+launchSlack = function()
+  launchThenDo("Slack", function(win)
+    twoThirdsRight(win)
   end)
 end
 
 launchAll = function()
   hs.timer.doAfter(0, function()
-    launchCgm()
+    launchXcode()
   end)
 
-  hs.timer.doAfter(2, function()
-    launchSpotify()
-  end)
-
-  hs.timer.doAfter(4, function()
-    launchSublime()
+  hs.timer.doAfter(3, function()
+    launchAppCode()
   end)
 
   hs.timer.doAfter(6, function()
+    launchSublime()
+  end)
+
+  hs.timer.doAfter(9, function()
     launchChrome()
   end)
 
-  hs.timer.doAfter(8, function()
+  hs.timer.doAfter(12, function()
     launchITerm()
+  end)
+
+  hs.timer.doAfter(15, function()
+    launchSlack()
   end)
 end
 
@@ -311,7 +327,7 @@ launchThenDo = function(appname, fn)
       return app:allWindows()[1] ~= nil
     end,
     function()
-	  fn(app:allWindows()[1])
+    fn(app:allWindows()[1])
     end,
     0.1
   )
@@ -356,7 +372,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, ".", function() moveToDellScreen(hs.windo
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "/", function() moveToMacScreen(hs.window.focusedWindow()) end)
 
 -- App specific hotkeys
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "b", launchCgm)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "x", launchXcode)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "s", launchSpotify)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "u", launchSublime)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "c", launchChrome)

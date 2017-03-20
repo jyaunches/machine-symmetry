@@ -30,7 +30,7 @@
 			<key>Alamofire/Alamofire</key>
 			<dict>
 				<key>date</key>
-				<date>2017-02-27T14:58:06Z</date>
+				<date>2017-03-15T15:19:18Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -44,7 +44,7 @@
 			<key>SnapKit/SnapKit</key>
 			<dict>
 				<key>date</key>
-				<date>2017-02-22T14:42:23Z</date>
+				<date>2017-03-15T15:19:06Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -58,7 +58,7 @@
 			<key>SwiftyJSON/SwiftyJSON</key>
 			<dict>
 				<key>date</key>
-				<date>2017-03-14T15:12:19Z</date>
+				<date>2017-03-15T15:19:14Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -72,7 +72,7 @@
 			<key>auth0/Auth0.swift</key>
 			<dict>
 				<key>date</key>
-				<date>2017-03-14T15:12:21Z</date>
+				<date>2017-03-15T15:19:11Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -86,7 +86,7 @@
 			<key>malcommac/SwiftDate</key>
 			<dict>
 				<key>date</key>
-				<date>2017-02-27T14:57:37Z</date>
+				<date>2017-03-15T15:19:16Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -178,22 +178,22 @@
 			<key>http://kapeli.com/feeds/Apple_API_Reference.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-02-22T14:43:28Z</date>
+				<date>2017-03-15T15:20:35Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-02-22T14:42:32Z</date>
+				<date>2017-03-15T15:19:13Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_on_Rails_4.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-02-22T14:40:25Z</date>
+				<date>2017-03-15T15:19:01Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Swift.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-02-22T14:39:50Z</date>
+				<date>2017-03-15T15:19:01Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
