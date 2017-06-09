@@ -30,7 +30,7 @@
 			<key>Alamofire/Alamofire</key>
 			<dict>
 				<key>date</key>
-				<date>2017-02-27T14:58:06Z</date>
+				<date>2017-04-18T00:22:36Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -58,7 +58,7 @@
 			<key>SwiftyJSON/SwiftyJSON</key>
 			<dict>
 				<key>date</key>
-				<date>2017-03-14T15:12:19Z</date>
+				<date>2017-04-17T00:22:25Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -72,7 +72,7 @@
 			<key>auth0/Auth0.swift</key>
 			<dict>
 				<key>date</key>
-				<date>2017-03-14T15:12:21Z</date>
+				<date>2017-04-19T00:22:43Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -86,7 +86,7 @@
 			<key>malcommac/SwiftDate</key>
 			<dict>
 				<key>date</key>
-				<date>2017-02-27T14:57:37Z</date>
+				<date>2017-04-17T00:22:28Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
