@@ -1,19 +1,25 @@
-alias gsc='heroku run rails c --app hellogrow-staging'
-alias gsl='heroku logs --tail --app hellogrow-staging'
-alias gsdbm='heroku run rake --trace db:migrate --app hellogrow-staging'
 
-alias gfc='heroku run rails c --app hellogrow-field'
-alias gfl='heroku logs --tail --app hellogrow-field'
-alias gfdbm='heroku run rake --trace db:migrate --app hellogrow-field'
+alias mcgs='mongo ds039020.mlab.com:39020/grow-staging -u staging -p 7EAVk0B9TWxlbw3EGqWlhR7l'
+alias mcgt='mongo ds125481.mlab.com:25481/grow-test -u grow-node-api -p z2TXKu6HIKFASzJiv9ojqd3y8gbV2D6O30O'
 
-alias spl='heroku logs --tail --app live-snapasong'
-alias ssl='heroku logs --tail --app snapasong'
 
-alias spc='heroku run rails c --app live-snapasong'
-alias ssc='heroku run rails c --app snapasong'
+alias gsec2='ssh -i /Users/jyaunches/.ssh/ec2 ec2-user@ec2-54-71-177-136.us-west-2.compute.amazonaws.com'
+alias gtec2='ssh -i /Users/jyaunches/.ssh/ec2 ec2-user@ec2-35-161-97-183.us-west-2.compute.amazonaws.com'
 
-alias grow-db-reset='heroku pg:reset DATABASE --app hellogrow-staging
-heroku run rake db:setup --app hellogrow-staging'
+--------- ZENEVATE HEROKU ----------
+
+alias zsc='heroku run rails c --app zenevate-staging'
+alias zsl='heroku logs --tail --app zenevate-staging'
+alias zsdbm='heroku run rake --trace db:migrate --app zenevate-staging'
+
+alias gpc='heroku run rails c --app zenevate-prod'
+alias gpl='heroku logs --tail --app zenevate-prod'
+alias gpdbm='heroku run rake --trace db:migrate --app zenevate-prod'
+
+alias grow-db-reset='heroku pg:reset DATABASE --app zenevate-staging
+heroku run rake db:setup --app zenevate-staging'
+
+-----------
 
 alias dd='cd ~/Library/Developer/Xcode/DerivedData'
 alias prov='cd /Users/jyaunches/Library/MobileDevice'
@@ -29,6 +35,8 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+export AUTH0_DOMAIN=https://zenevate.auth0.com
+export AUTH0_AUDIENCE=https://api.zenevate.com
 export JAVA_HOME=$(/usr/libexec/java_home)
 export JDK_HOME=$JAVA_HOME
 export AWS_ACCESS_KEY=AKIAJF7QK4EL36FRS55A
