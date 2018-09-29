@@ -12,13 +12,22 @@ alias zsc='heroku run rails c --app zenevate-staging'
 alias zsl='heroku logs --tail --app zenevate-staging'
 alias zsdbm='heroku run rake --trace db:migrate --app zenevate-staging'
 
-alias gpc='heroku run rails c --app zenevate-prod'
-alias gpl='heroku logs --tail --app zenevate-prod'
-alias gpdbm='heroku run rake --trace db:migrate --app zenevate-prod'
+alias zpc='heroku run rails c --app zenevate-prod'
+alias zpl='heroku logs --tail --app zenevate-prod'
+alias zpdbm='heroku run rake --trace db:migrate --app zenevate-prod'
 
-alias grow-db-reset='heroku pg:reset DATABASE --app zenevate-staging
+alias zsdbs='heroku run rake db:seed --app zenevate-staging'
+alias zsdbp='heroku run rake db:seed --app zenevate-prod'
+alias gpzp='git push heroku master'
+alias gpzs='git push heroku-staging master'
+
+alias zsdbr='heroku pg:reset DATABASE --app zenevate-staging
+heroku run rake db:migrate --app zenevate-staging
 heroku run rake db:setup --app zenevate-staging'
 
+alias zpdbr='heroku pg:reset DATABASE --app zenevate-prod
+heroku run rake db:migrate --app zenevate-prod
+heroku run rake db:setup --app zenevate-prod'
 -----------
 
 alias dd='cd ~/Library/Developer/Xcode/DerivedData'
